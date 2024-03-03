@@ -82,7 +82,7 @@ export default {
   },
   methods: {
     getAllProduct () {
-      const api = `${process.env.VUE_APP_API}api/joseph-api/admin/products?page=${this.currentPage}`
+      const api = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/admin/products?page=${this.currentPage}`
       this.isLoading = true
       this.$http.get(api)
         .then((res) => {
