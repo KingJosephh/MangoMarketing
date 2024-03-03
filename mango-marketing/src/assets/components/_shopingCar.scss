@@ -1,0 +1,14 @@
+.shopping-fix {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 60px; /* 設定圖案寬度 */
+    height: 60px; /* 設定圖案高度 */
+    background-color: rgba(255, 85, 0, 0.4); /* 設定背景顏色 */
+    color: #fff; /* 設定文字顏色 */
+    border-radius: 50%; /* 讓圖案呈現圓形 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

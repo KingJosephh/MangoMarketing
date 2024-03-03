@@ -1,0 +1,85 @@
+@mixin media-breakpoint-up($breakpoint) {
+    @if $breakpoint == lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+    }
+    // 添加其他断点的定义，根据需要进行扩展
+}
+.car-model{
+    position: center center;
+    object-fit: cover;
+    height: 166px;
+    width: 100%;
+    @include media-breakpoint-up(lg) { 
+        height: 312px;
+    }
+}
+.car-model2{
+    position: center center;
+    object-fit: cover;
+    height: 166px;
+    width: 100%;
+    @include media-breakpoint-up(lg) {         
+    }
+}
+.car-model3{
+    position: center center;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    @include media-breakpoint-up(lg) { 
+        height: 100%;        
+        width: 200px;
+    }
+}
+.car-model4{
+    position: center center;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    @include media-breakpoint-up(lg) { 
+        height: 100%;        
+        width: 350px;
+    }
+}
+.car-model5{
+    position: center center;
+    object-fit: cover;
+    height: 300px;
+    width: 100px;
+    @include media-breakpoint-up(lg) { 
+        height: 350px;        
+        width: 100%;
+    }
+}
+.car-model6{
+    position: center center;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    @include media-breakpoint-up(lg) { 
+        height: 350px;        
+        width: 100%;
+    }
+}
+.car-model7{
+    position: center center;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    @include media-breakpoint-up(lg) { 
+        height: 200px;        
+        width: 150px;
+    }
+}
+.car-model8{
+    position: center center;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+        height: 450px;
+        width: 100%;
+    }
+}
